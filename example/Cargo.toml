@@ -1,0 +1,16 @@
+[package]
+name = "example"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[build]
+command = "wasm-pack build --no-typescript --target bundler --out-dir build --out-name index"
+
+[dependencies]
+cfg-if = "0.1.2"
+worker = "0.0.9"
+serde_json = "1.0.67"
+wasm-bindgen = "0.2.78"

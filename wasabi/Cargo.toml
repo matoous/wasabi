@@ -1,0 +1,13 @@
+[package]
+name = "wasabi"
+version = "0.1.0"
+edition = "2021"
+include = ["src/**/*", "README.md"]
+
+[[bin]]
+name = "wasabi"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.64"
+wasmer = "2.3.0"
